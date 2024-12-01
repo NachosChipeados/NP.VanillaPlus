@@ -5,31 +5,37 @@ Patch for Northstar.Client to enable client-side mods on official servers.
 
 # Installation
 
-## If you installed an older version of the mod, delete it before installing the new one! If you still have a version with `Northstar.Client` installed in the `mods` directory, delete that too!
+## If you installed an older version of the mod, delete it before installing the new one! If you still have a version with `Northstar.Client` installed in the `mods` directory, or a version thats called `NanohmProtogen-VanillaPlus` delete those too!
 
-1.) [Install Northstar](https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/basic-setup) if you don't already have it
+1.) [Install Northstar](https://docs.northstar.tf/Wiki/installing-northstar/basic-setup/) if you don't already have it
 
-2.) Create a folder in your [Titanfall2 Directory](https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/troubleshooting#game-location) called `R2Titanfall`
+2.) Create a folder in your [Titanfall2 Directory](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#finding-game-location) called `R2Titanfall`
 
 3.) Inside of that folder, create a folder called `packages`
 
-4.) Place the unzipped Thunderstore download of VanillaPlus in the `packages` folder
+4.) Place the unzipped Thunderstore download of Vanilla+ in the `packages` folder
 
 5.) It should look like this
 ```
 Titanfall2
   R2Titanfall
     packages
-      NanohmProtogen-VanillaPlus-2.4.1
+      NachosChipeados-VanillaPlus-2.4.3
 ```
 
 Note that the folder in `packages` is NOT a `.zip` file
 
 6.) There are multiple ways you can launch this profile. You only need to do one of these, and it's recommend you do `6a`.
 
-6a.) Add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/troubleshooting#launch-opts) to Titanfall 2 on Steam or EA, then launch Titanfall 2 from Steam or EA (recommended, as this will count hours and achievements, where as a `.bat` won't)
+6a.) Add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) to Titanfall 2 on Steam or EA, then launch Titanfall 2 from Steam or EA (recommended, as this will count hours and achievements, where as a `.bat` won't)
 
-6b.)
+6b.) On steam, on the bottom left of your library click `Add a Game`, then click `Add a Non-Steam Game`, `Browse`, and locate your [Titanfall2 Directory](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#finding-game-location). 
+
+After you do this, click `Titanfall2.exe` and click `Add selected Programs`. This will create an extra `Titanfall2` entry in your library.
+
+Right click on this new entry, and rename it to `Titanfall 2: Vanilla+`. Then, add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) for it. This will allow you to launch Vanilla Titanfall 2, and Vanilla+ separately, as well as count hours and achievements.
+
+6c.)
 - Create a file called `R2Titanfall.txt` in your `Titanfall2` folder, then put the following text in:
 ```
 NorthstarLauncher.exe -northstar -vanilla -profile=R2Titanfall

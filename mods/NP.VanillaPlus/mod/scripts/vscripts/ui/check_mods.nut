@@ -71,7 +71,7 @@ void function CoreMods()
 
     coreModWarnDiag.image = $"ui/menu/common/dialog_error"
     AddDialogButton(coreModWarnDiag, "Go to instructions", void function(){
-        LaunchExternalWebBrowser("https://northstar.thunderstore.io/package/NanohmProtogen/VanillaPlus/", WEBBROWSER_FLAG_FORCEEXTERNAL); ClientCommand("uiscript_reset"); ClientCommand("core_remind 0")
+        LaunchExternalWebBrowser("https://northstar.thunderstore.io/package/NachosChipeados/VanillaPlus/", WEBBROWSER_FLAG_FORCEEXTERNAL); ClientCommand("uiscript_reset"); ClientCommand("core_remind 0")
 
     })
 	AddDialogButton(coreModWarnDiag, "Continue to Northstar servers", void function(){ClientCommand("uiscript_reset"); ClientCommand("core_remind 0")})
@@ -87,7 +87,7 @@ void function UpdateToUsingVanillaLaunchOption()
 
     coreModWarnDiag.image = $"ui/menu/common/dialog_error"
     AddDialogButton(coreModWarnDiag, "Go to instructions", void function(){
-        LaunchExternalWebBrowser("https://northstar.thunderstore.io/package/NanohmProtogen/VanillaPlus/", WEBBROWSER_FLAG_FORCEEXTERNAL); ClientCommand("uiscript_reset"); ClientCommand("core_remind 0")
+        LaunchExternalWebBrowser("https://northstar.thunderstore.io/package/NachosChipeados/VanillaPlus/", WEBBROWSER_FLAG_FORCEEXTERNAL); ClientCommand("uiscript_reset"); ClientCommand("core_remind 0")
 
     })
 	AddDialogButton(coreModWarnDiag, "Continue to not recommended VanillaPlus", void function(){ClientCommand("uiscript_reset"); ClientCommand("norestrictservercommands_remind 0")})
