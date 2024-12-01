@@ -48,6 +48,6 @@ For both ways, remember to also download dependencies listed in the mod page (ig
 
 # Install (Easier Alternative Method)
 
-1.) Download the [latest GitHub Release](https://github.com/Zayveeo5e/NP.VanillaPlus/releases/latest) and unzip it, then put the files from that zip in your `Titanfall2` folder (where the `Titanfall2.exe` is)
+1.) Download the [latest GitHub Release](https://github.com/NachosChipeados/NP.VanillaPlus/releases/latest) and unzip it, then put the files from that zip in your `Titanfall2` folder (where the `Titanfall2.exe` is)
 
 2.) Double click `R2Titanfall.bat` to play Vanilla+. Open the EA App first if you use this method, otherwise it most likely won't work
