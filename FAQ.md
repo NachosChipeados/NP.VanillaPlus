@@ -28,7 +28,13 @@ Update Northstar to solve the issue
 ## COMPILE ERROR Undefined variable "NSPushUIPresence"
 
 This error comes up if you have Northstar 1.20 or higher, and have Vanilla+ 2.2 or lower. 
-The reasoning is similar to the answer above, except instead of an up to date Vanilla+ and out of date Northstar, this is due to an up to date Vanilla+ and an out of date Northstar.
+The reasoning is similar to the answer above, except instead of an up to date Vanilla+ and out of date Northstar, this is due to an up to date Northstar and an out of date Vanilla+.
+
+Update Vanilla+ to the latest version to solve the issue
+
+## COMPILE ERROR Undefined variable "NSGetModDownloadLinkByName"
+This error comes up if you have Northstar 1.29 or higher, and have Vanilla+ 2.4.1 or lower.
+Same exact reason as above.
 
 Update Vanilla+ to the latest version to solve the issue
 
