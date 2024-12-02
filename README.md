@@ -1,7 +1,7 @@
 # VanillaPlus
 Patch for Northstar.Client to enable client-side mods on official servers.
 
-# THIS HAS A NON-STANDARD INSTALL PROCESS!
+# THIS MOD HAS A NON-STANDARD INSTALL PROCESS!
 
 # Installation
 
@@ -13,7 +13,7 @@ Patch for Northstar.Client to enable client-side mods on official servers.
 
 3.) Inside of that folder, create a folder called `packages`
 
-4.) Place the unzipped Thunderstore download of Vanilla+ in the `packages` folder
+4.) Place the unzipped Thunderstore download of Vanilla+ in the `packages` folder, and extract it
 
 5.) It should look like this
 ```
@@ -52,9 +52,3 @@ An easy way to install mods can be done by simply downloading a mod off of Thund
 Alternatively, you can follow the [guide for installing mods in the `mods` directory](https://docs.northstar.tf/Wiki/installing-northstar/manual-installation/#installing-northstar-mods-manually).
 
 For both ways, remember to also download dependencies listed in the mod page (ignore `Mod Settings` if it's listed)
-
-# Install (Easier Alternative Method)
-
-1.) Download the [latest GitHub Release](https://github.com/NachosChipeados/NP.VanillaPlus/releases/latest) and unzip it, then put the files from that zip in your `Titanfall2` folder (where the `Titanfall2.exe` is)
-
-2.) Double click `R2Titanfall.bat` to play Vanilla+. Open the EA App first if you use this method, otherwise it most likely won't work
