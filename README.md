@@ -21,6 +21,8 @@ Titanfall2
   R2Titanfall
     packages
       NachosChipeados-VanillaPlus-2.4.3
+        mods
+          NP.VanillaPlus
 ```
 
 Note that the folder in `packages` is NOT a `.zip` file
