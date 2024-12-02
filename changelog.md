@@ -1,3 +1,18 @@
+2.4.4
+- Removed "Easier Alternative Install Method" from README.md
+- (Hopefully) better clarified Thunderstore install instructions
+
+2.4.3
+- Added `chatroom.nut` from Northstar
+- Moved `fontfiletable.txt` to keyvalues
+- Added `NSGetModDownloadLinkByName` error to FAQ.md
+- Added extra launch option to README.md
+- Updated links in README.md to point to the new wiki
+- Updated github links to point to this repo
+
+2.4.2
+- Update to handle northstars mod info refactor
+
 2.4.1
 - Add warning to migrate to `-vanilla` if the user is still on `-norestrictservercommands`
 
