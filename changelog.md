@@ -11,7 +11,7 @@
 - Updated github links to point to this repo
 
 2.4.2
-- Update to handle northstars mod info refactor
+- Updated to handle Northstar`s mod info refactor
 
 2.4.1
 - Add warning to migrate to `-vanilla` if the user is still on `-norestrictservercommands`
