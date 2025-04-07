@@ -38,7 +38,7 @@ Note that the folder in `packages` is NOT a `.zip` file
 
 - Right click on this new entry, and rename it to `Titanfall 2: Vanilla+`. Then, add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) for it. This will allow you to launch Vanilla Titanfall 2, and Vanilla+ separately, as well as count hours and achievements.
 
-Do note that there's a chance the game won't launch, because the EA app is hot garbage. If this happens, keep trying to launch until it finally lets you.
+Do note that there's a chance the game won't launch, without giving you any signs or errors, because the EA app is hot garbage. If this happens, keep trying to launch until it finally lets you.
 
 6c.)
 - Create a file called `R2Titanfall.txt` in your `Titanfall2` folder, then put the following text in it:
