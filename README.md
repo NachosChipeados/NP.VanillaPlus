@@ -38,18 +38,20 @@ Note that the folder in `packages` is NOT a `.zip` file
 
 - Right click on this new entry, and rename it to `Titanfall 2: Vanilla+`. Then, add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) for it. This will allow you to launch Vanilla Titanfall 2, and Vanilla+ separately, as well as count hours and achievements.
 
+Do note that there's a chance the game won't launch, because the EA app is hot garbage. If this happens, keep trying to launch until it finally lets you.
+
 6c.)
-- Create a file called `R2Titanfall.txt` in your `Titanfall2` folder, then put the following text in:
+- Create a file called `R2Titanfall.txt` in your `Titanfall2` folder, then put the following text in it:
 ```
 NorthstarLauncher.exe -northstar -vanilla -profile=R2Titanfall
 ```
 - Now save it and rename it to `R2Titanfall.bat`
 
-- Double click `R2Titanfall.bat` to launch the Vanilla+ profile we just made. Open the EA App first if you use this method, otherwise it most likely won't work
+- Double click `R2Titanfall.bat` to launch the Vanilla+ profile we just made. Open the EA App first if you use this method, otherwise it most likely won't work.
 
 # Installing additional mods
 
-An easy way to install mods can be done by simply downloading a mod off of Thunderstore, unzipping the downloaded file, then placing that folder inside the `R2Titanfall/packages` directory. Create it if it doesn't exist.
+An easy way to install mods can be done by simply downloading a mod off of Thunderstore, unzipping the downloaded file, then placing that folder (usually named something like `NachosChipeados-VanillaPlus-2.4.3`, for example) inside the `R2Titanfall/packages` directory. Create it if it doesn't exist.
 
 Alternatively, you can follow the [guide for installing mods in the `mods` directory](https://docs.northstar.tf/Wiki/installing-northstar/manual-installation/#installing-northstar-mods-manually).
 
