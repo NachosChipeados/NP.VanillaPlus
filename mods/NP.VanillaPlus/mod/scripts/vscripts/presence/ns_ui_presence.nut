@@ -9,18 +9,6 @@ globalize_all_functions
 // otherwise, this file is directly the same as 
 // the one from Northstar.Client
 
-global struct UIPresenceStruct {
-    int gameState
-}
-
-global enum eDiscordGameState
-{
-    LOADING = 0
-    MAINMENU
-    LOBBY
-    INGAME
-}
-
 UIPresenceStruct function DiscordRPC_GenerateUIPresence( UIPresenceStruct uis )
 {
 	if ( uiGlobal.isLoading )

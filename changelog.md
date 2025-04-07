@@ -1,3 +1,9 @@
+2.5.0
+- Use tabs for indentation
+- Add Spectre rodeo, in-game server browser and better server browser warning
+- Hide a few V+ convars
+- Update Discord RPC stuff
+
 2.4.4
 - Removed "Easier Alternative Install Method" from README.md
 - (Hopefully) better clarified Thunderstore install instructions

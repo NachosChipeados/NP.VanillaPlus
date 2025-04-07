@@ -54,3 +54,5 @@ An easy way to install mods can be done by simply downloading a mod off of Thund
 Alternatively, you can follow the [guide for installing mods in the `mods` directory](https://docs.northstar.tf/Wiki/installing-northstar/manual-installation/#installing-northstar-mods-manually).
 
 For both ways, remember to also download dependencies listed in the mod page (ignore `Mod Settings` if it's listed)
+
+![1](https://docs.northstar.tf/Wiki/images/manual-mod-install.png)
