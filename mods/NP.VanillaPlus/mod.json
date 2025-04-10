@@ -122,7 +122,12 @@
 		}
 	],
 	"Dependencies": {
+		// Core
 		"VP_HAS_CLIENT": "Northstar.Client",
+		"VP_HAS_CUSTOM": "Northstar.Custom",
+		"VP_HAS_SERVERS": "Northstar.CustomServers",
+
+		// Misc mods
 		"VP_HAS_MORESKINS": "MoreSkins-",
 		"VP_HAS_FRAMEWORK": "Peepee.TitanFramework",
 		"VP_HAS_SPECTRE_RODEO": "Gazyi.SpectreRodeo",

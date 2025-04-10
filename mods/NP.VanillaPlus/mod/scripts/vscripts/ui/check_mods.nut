@@ -33,8 +33,15 @@ void function CheckForMods()
 
 			printt( "VanillaPlus Error 0: Not in vanilla compatibility mode" )
 			if ( GetConVarBool( "core_remind" ) )
-				CoreMods()
+				VanillaCompat()
 		}
+	}
+
+	// TODO: see how Archon handles disabling mods
+	else if ( VP_HAS_CLIENT || VP_HAS_CUSTOM || VP_HAS_SERVERS )
+	{
+		if ( GetConVarBool( "core_remind" ) )
+			CoreModsEnabled()
 	}
 
 	// TODO: find a better way to do this
@@ -82,10 +89,29 @@ void function OtherMods()
 		OpenDialog( warnDiag )
 }
 
-void function CoreMods()
+void function CoreModsEnabled()
 {    
 	DialogData coreModWarnDiag
-	coreModWarnDiag.header = "Not using vanilla compatibiltiy mode!"
+	coreModWarnDiag.header = "Northstar core mods detected!"
+
+	coreModWarnDiag.message = "Northstar's core mods were detected!\n\nThis means that you did not install VanillaPlus properly!\n\nHaving Vanilla+ in the same folder as regular Northstar, OR having Northstar's core mods in the same folder as VanillaPlus WILL cause issues! Please read the instructions again.\n\nHaving them enabled WILL break Vanilla!"
+
+	coreModWarnDiag.image = $"ui/menu/common/dialog_error"
+	AddDialogButton( coreModWarnDiag, "Go to instructions", void function(){
+		LaunchExternalWebBrowser( "https://northstar.thunderstore.io/package/NachosChipeados/VanillaPlus/", WEBBROWSER_FLAG_FORCEEXTERNAL ); ClientCommand( "uiscript_reset" ); ClientCommand( "core_remind 0" )
+
+	})
+	AddDialogButton( coreModWarnDiag, "#OK", void function(){ ClientCommand( "uiscript_reset" ); ClientCommand( "core_remind 0" ) } )
+	coreModWarnDiag.noChoiceWithNavigateBack = true
+
+	if ( GetConVarBool( "core_remind" ) )
+		OpenDialog( coreModWarnDiag )
+}
+
+void function VanillaCompat()
+{    
+	DialogData coreModWarnDiag
+	coreModWarnDiag.header = "Not using vanilla compatibility mode!"
 
 	coreModWarnDiag.message = "You aren't using Northstar's vanilla compatibility mode!\n\nVanillaPlus requires that you follow it's instructions properly to install it!\n\nIgnoring will continue to Northstar servers!"
 
@@ -101,7 +127,7 @@ void function CoreMods()
 void function UpdateToUsingVanillaLaunchOption()
 {
 	DialogData coreModWarnDiag
-	coreModWarnDiag.header = "Not using vanilla compatibiltiy mode!"
+	coreModWarnDiag.header = "Not using vanilla compatibility mode!"
 
 	coreModWarnDiag.message = "You aren't using Northstar's vanilla compatibility mode!\n\nIt seems that you're still using the launch option '-norestrictservercommands'.\n\nRecently, a better version of vanilla using the launch option '-vanilla' has come out.\n\nPlease update to that.\n\nYou can read the instructions for how to properly do it again, or you can continue to use VanillaPlus as is, altough it isn't recommended."
 
