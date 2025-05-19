@@ -30,11 +30,11 @@ Note that the folder in `packages` is NOT a `.zip` file. If the file path looks 
 
 # Launching
 
-There are multiple ways you can launch this profile. You only need to do one of these, and it's recommended you do `#1`.
+There are multiple ways you can launch this profile. You only need to do one of these, and it's recommended you do `A`.
 
-1.) Add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) to Titanfall 2 on Steam or EA, then launch Titanfall 2 from either launcher (recommended, as this will count hours and achievements, where as a `.bat` won't)
+A.) Add `-northstar -vanilla -profile=R2Titanfall` as [launch options](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#adding-launch-options) to Titanfall 2 on Steam or EA, then launch Titanfall 2 from either launcher (recommended, as this will count hours and achievements, where as a `.bat` won't)
 
-2.)
+B.)
 - On steam, on the bottom left of your library click `Add a Game` -> `Add a Non-Steam Game` -> `Browse`, and locate your [Titanfall2 Directory](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#finding-game-location). 
 
 - After you do this, select `Titanfall2.exe` and click `Add selected Programs`. This will create an extra `Titanfall2` entry in your library.
@@ -43,7 +43,7 @@ There are multiple ways you can launch this profile. You only need to do one of 
 
 Do note that there's a chance the game won't launch, without giving you any signs or errors, because the EA app is hot garbage. If this happens, keep trying to launch until it finally lets you in.
 
-3.)
+C.)
 - Create a file called `R2Titanfall.txt` in your `Titanfall2` folder, then put the following text in it:
 ```
 NorthstarLauncher.exe -northstar -vanilla -profile=R2Titanfall
