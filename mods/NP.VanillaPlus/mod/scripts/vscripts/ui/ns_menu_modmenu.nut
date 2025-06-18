@@ -18,7 +18,7 @@ struct panelContent {
 enum filterShow {
 	ALL = 0,
 	ONLY_ENABLED = 1,
-	ONLY_DISABLED = 2
+	ONLY_DISABLED = 2,
 	ONLY_NOT_REQUIRED = 3,
 	ONLY_REQUIRED = 4
 }
@@ -151,14 +151,16 @@ void function OnModMenuClosed()
 	foreach ( ModInfo mod in current )
 	{
 		bool notFound = true
+
 		foreach ( ModInfo enMod in file.enabledMods )
 		{
-			if ( mod.name == enMod.name )
+			if ( mod.name == enMod.name && mod.version == enMod.version )
 			{
 				notFound = false
 				break
 			}
 		}
+
 		if ( notFound )
 		{
 			reload = true
@@ -213,17 +215,20 @@ void function OnModButtonPressed( var button )
 		CoreModToggleDialog( modName )
 	else
 	{
-		NSSetModEnabled( modName, !mod.enabled )
+		NSSetModEnabled( modName, mod.version, !mod.enabled )
+
 		// retrieve state of the mod that just got toggled
 		array<ModInfo> infos = NSGetModInformation( mod.name )
-		foreach ( ModInfo modInfo in infos )
+		foreach ( modInfo in infos )
 		{
 			if ( modInfo.name != modName || modInfo.version != mod.version )
 			{
 				continue
 			}
+
 			// Update UI mod state
 			file.mods[ int ( Hud_GetScriptID( Hud_GetParent( button ) ) ) + file.scrollOffset - 1 ].mod = modInfo
+
 			var panel = file.panels[ int ( Hud_GetScriptID( Hud_GetParent( button ) ) ) - 1 ]
 			SetControlBoxColor( Hud_GetChild( panel, "ControlBox" ), modInfo )
 			SetControlBarColor( modInfo )
@@ -304,7 +309,7 @@ void function DisableMod()
 {
 	ModInfo mod = file.mods[ int ( Hud_GetScriptID( Hud_GetParent( file.currentButton ) ) ) + file.scrollOffset - 1 ].mod
 	string modName = mod.name
-	NSSetModEnabled( modName, false )
+	NSSetModEnabled( modName, mod.version, false )
 
 	// retrieve state of the mod that just got toggled
 	array<ModInfo> infos = NSGetModInformation( mod.name )
@@ -367,6 +372,10 @@ void function RefreshMods()
 	{
 		ModInfo mod = mods[i]
 		string modName = mod.name
+
+		// Do not display remote mods
+		if ( mod.isRemote )
+			continue
 
 		if ( searchTerm.len() && modName.tolower().find( searchTerm ) == null )
 			continue
@@ -703,6 +712,15 @@ void function ReloadMods()
 	SetConVarBool( "sv_cheats", true )
 	ClientCommand( "weapon_reparse" ) // weapon_reparse only works if a server is running and sv_cheats is 1, gotta figure this out eventually
 	SetConVarBool( "sv_cheats", svCheatsOriginal )
+
+	array<string> materialPaths = [ "cable", "correction", "debug", "decals", "dev", "effect", "engine", "models", "particle", "sprites", "tools", "ui", "vgui", "world" ]
+
+	foreach ( dir in materialPaths )
+	{
+		// Ex: "mat_reloadmaterial models/" will reload every vtf and vmt under the "models" path
+		// The reason this is done this way, is because Respawn removed "mat_reloadallmaterials" for some reason
+		ClientCommand( "mat_reloadmaterial " + dir + "/" )
+	}
 
 	// note: the logic for this seems really odd, unsure why it doesn't seem to update, since the same code seems to get run irregardless of whether we've read weapon data before
 	ClientCommand( "uiscript_reset" )

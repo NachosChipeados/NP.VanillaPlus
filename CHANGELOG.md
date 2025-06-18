@@ -1,7 +1,7 @@
 2.5.0
 - Use tabs for indentation
 - Add Spectre rodeo, in-game server browser and better server browser warning
-- Hide a few V+ convars
+- Hide a few Vanilla+ convars that are only used internally
 - Update Discord RPC stuff
 
 2.4.4
