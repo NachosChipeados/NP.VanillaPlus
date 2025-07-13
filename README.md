@@ -1,11 +1,15 @@
 # VanillaPlus
 Patch for Northstar.Client to enable client-side mods on official servers.
 
-# THIS MOD HAS A NON-STANDARD INSTALL PROCESS!
+# Troubleshooting
+
+A page explaining how to solve most of the common issues with Vanilla+: https://github.com/NachosChipeados/NP.VanillaPlus/blob/main/FAQ.md
 
 # Installation
 
-## If you installed an older version of the mod, delete it before installing the new one! If you still have a version with `Northstar.Client` installed in the `mods` directory, or a version thats called `NanohmProtogen-VanillaPlus` delete those too!
+# THIS MOD HAS A NON-STANDARD INSTALL PROCESS!
+
+## If you installed an older version of the mod, delete it before installing the new one! If you still have a version with `Northstar.Client` installed in the `mods` directory, or a version thats called `NanohmProtogen-VanillaPlus`, delete those too!
 
 ## Video tutorial, in case you prefer that: https://www.youtube.com/watch?v=ZlADmc46tMQ (though i still recommend reading the rest of the steps mentioned here, just in case!)
 
@@ -60,12 +64,8 @@ An easy way to install mods can be done by simply downloading a mod off of Thund
 
 Alternatively, you can follow the [guide for installing mods in the `mods` directory](https://docs.northstar.tf/Wiki/installing-northstar/manual-installation/#installing-northstar-mods-manually).
 
-# DO NOT install mods into `R2Titanfall/packages/NachosChipeados-VanillaPlus-2.5.1/mods`. That's NOT the right folder.
+## DO NOT install mods into `R2Titanfall/packages/NachosChipeados-VanillaPlus-2.5.1/mods`. That's NOT the right folder.
 
 For both ways, remember to also download dependencies listed in the mod page (ignore `Mod Settings` if it's listed)
 
 ![1](https://docs.northstar.tf/Wiki/images/manual-mod-install.png)
-
-# Troubleshooting
-
-A page explaining how to solve most of the common issues with Vanilla+: https://github.com/NachosChipeados/NP.VanillaPlus/blob/main/FAQ.md
