@@ -7,6 +7,8 @@ Patch for Northstar.Client to enable client-side mods on official servers.
 
 ## If you installed an older version of the mod, delete it before installing the new one! If you still have a version with `Northstar.Client` installed in the `mods` directory, or a version thats called `NanohmProtogen-VanillaPlus` delete those too!
 
+## Video tutorial, in case you prefer that: https://www.youtube.com/watch?v=ZlADmc46tMQ (though i still recommend reading the rest of the steps mentioned here, just in case!)
+
 1.) [Install Northstar](https://docs.northstar.tf/Wiki/installing-northstar/basic-setup/) if you don't already have it
 
 2.) Create a folder in your [Titanfall2 Directory](https://docs.northstar.tf/Wiki/installing-northstar/troubleshooting/#finding-game-location) called `R2Titanfall`
@@ -15,7 +17,7 @@ Patch for Northstar.Client to enable client-side mods on official servers.
 
 4.) Place the unzipped Thunderstore download of Vanilla+ in the `packages` folder, and extract it
 
-5.) It should look like this:
+5.) The file structure should look like this:
 ```
 Titanfall2
   R2Titanfall
@@ -24,7 +26,7 @@ Titanfall2
         mods
           NP.VanillaPlus
 ```
-(`R2Titanfall/packages/NachosChipeados-VanillaPlus-2.5.1/mods/NP.VanillaPlus`)
+(`Titanfall2/R2Titanfall/packages/NachosChipeados-VanillaPlus-2.5.1/mods/NP.VanillaPlus`)
 
 Note that the folder in `packages` is NOT a `.zip` file. If the file path looks like this: `R2Titanfall/packages/NP.VanillaPlus`, then you didn't install Vanilla+ correctly.
 
@@ -63,3 +65,7 @@ Alternatively, you can follow the [guide for installing mods in the `mods` direc
 For both ways, remember to also download dependencies listed in the mod page (ignore `Mod Settings` if it's listed)
 
 ![1](https://docs.northstar.tf/Wiki/images/manual-mod-install.png)
+
+# Troubleshooting
+
+A page explaining how to solve most of the common issues with Vanilla+: https://github.com/NachosChipeados/NP.VanillaPlus/blob/main/FAQ.md
