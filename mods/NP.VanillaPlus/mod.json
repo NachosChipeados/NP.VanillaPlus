@@ -78,6 +78,13 @@
 			"RunOn": "UI"
 		},
 		{
+			"Path": "ui/ns_menu_color_picker.nut",
+			"RunOn": "UI || CLIENT",
+			"UICallback": {
+				"After": "AddColorPickerMenu"
+			}
+		},
+		{
 			"Path": "ui/ns_menu_modsettings.nut",
 			"RunOn": "UI",
 			"UICallback":{
