@@ -40,7 +40,7 @@ struct {
 } file
 
 const int PANELS_LEN = 15
-const string[3] CORE_MODS = ["Northstar.Client", "Northstar.Coop", "Northstar.CustomServers"] // Shows a warning if you try to disable these
+const string[4] CORE_MODS = ["Northstar.Client", "Northstar.Coop", "Northstar.CustomServers", "VanillaPlus"] // Shows a warning if you try to disable these
 
 void function AddNorthstarModMenu()
 {
