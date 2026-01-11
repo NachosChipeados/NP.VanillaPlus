@@ -114,7 +114,7 @@ void function InitInGameMPMenu()
 
 	#if VANILLA
 	// MOD SETTINGS
-	var modSettingsButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "Mod Settings" )
+	var modSettingsButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "#MOD_SETTINGS" )
 	Hud_AddEventHandler( modSettingsButton, UIE_CLICK, AdvanceMenuEventHandler( GetMenu( "ModSettings" ) ) )
 	#endif
 
@@ -265,7 +265,7 @@ void function InitInGameSPMenu()
 	
 	#if VANILLA
 	// MOD SETTINGS
-	var modSettingsButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "Mod Settings" )
+	var modSettingsButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "#MOD_SETTINGS" )
 	Hud_AddEventHandler( modSettingsButton, UIE_CLICK, AdvanceMenuEventHandler( GetMenu( "ModSettings" ) ) )
 	#endif
 
